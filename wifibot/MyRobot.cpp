@@ -120,3 +120,12 @@ void MyRobot::MoveBack(){
     CrcAndSend();
 }
 
+void MyRobot::MoveRight(){
+    DataToSend[2] = 120;
+    DataToSend[3] = 120;
+    DataToSend[4] = 120;
+    DataToSend[5] = 120;
+    DataToSend[6] = 0xE0;
+    CrcAndSend();
+}
+

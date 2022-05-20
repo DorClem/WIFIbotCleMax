@@ -35,3 +35,9 @@ void MainWindow::on_pushButton_clicked()
     robot.doConnect();
 }
 
+
+void MainWindow::on_buttonDroite_clicked()
+{
+    robot.MoveRight();
+}
+

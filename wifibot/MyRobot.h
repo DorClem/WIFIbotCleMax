@@ -21,6 +21,7 @@ public:
     void CrcAndSend();
     void MoveForward();
     void MoveBack();
+    void MoveRight();
 
 signals:
     void updateUI(const QByteArray Data);
