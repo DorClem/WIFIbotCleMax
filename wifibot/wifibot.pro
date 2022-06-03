@@ -11,11 +11,13 @@ CONFIG += c++17
 SOURCES += \
     MyRobot.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    videodisplay.cpp
 
 HEADERS += \
     MyRobot.h \
-    mainwindow.h
+    mainwindow.h \
+    videodisplay.h
 
 FORMS += \
     mainwindow.ui
