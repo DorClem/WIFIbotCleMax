@@ -41,3 +41,9 @@ void MainWindow::on_buttonDroite_clicked()
     robot.MoveRight();
 }
 
+
+void MainWindow::on_buttonGauche_clicked()
+{
+    robot.MoveLeft();
+}
+

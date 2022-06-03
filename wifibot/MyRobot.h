@@ -22,6 +22,7 @@ public:
     void MoveForward();
     void MoveBack();
     void MoveRight();
+    void MoveLeft();
 
 signals:
     void updateUI(const QByteArray Data);

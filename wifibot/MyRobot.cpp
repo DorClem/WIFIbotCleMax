@@ -102,7 +102,7 @@ void MyRobot::CrcAndSend(){
     connect(TimerEnvoi, SIGNAL(timeout()), this, SLOT(MyTimerSlot()));
 }
 
-void MyRobot::MoveForward(){
+void MyRobot::MoveForward(){    // avancer
     DataToSend[2] = 120;
     DataToSend[3] = 120;
     DataToSend[4] = 120;
@@ -111,7 +111,7 @@ void MyRobot::MoveForward(){
     CrcAndSend();
 }
 
-void MyRobot::MoveBack(){
+void MyRobot::MoveBack(){   // reculer
     DataToSend[2] = 120;
     DataToSend[3] = 120;
     DataToSend[4] = 120;
@@ -120,7 +120,7 @@ void MyRobot::MoveBack(){
     CrcAndSend();
 }
 
-void MyRobot::MoveRight(){
+void MyRobot::MoveRight(){  // aller a droite
     DataToSend[2] = 120;
     DataToSend[3] = 120;
     DataToSend[4] = 120;
@@ -129,3 +129,11 @@ void MyRobot::MoveRight(){
     CrcAndSend();
 }
 
+void MyRobot::MoveLeft(){  // aller a droite
+    DataToSend[2] = 120;
+    DataToSend[3] = 120;
+    DataToSend[4] = 120;
+    DataToSend[5] = 120;
+    DataToSend[6] = 0xB0;
+    CrcAndSend();
+}

@@ -50,6 +50,8 @@ private slots:
 
     void on_buttonDroite_clicked();
 
+    void on_buttonGauche_clicked();
+
 private:
 
 
