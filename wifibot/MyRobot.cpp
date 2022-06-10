@@ -109,6 +109,8 @@ void MyRobot::CrcAndSend(){
     connect(TimerEnvoi, SIGNAL(timeout()), this, SLOT(MyTimerSlot()));
 }
 
+// ========================= MOUVEMENTS DU ROBOT ============================
+
 void MyRobot::MoveForward(){    // avancer
     DataToSend[2] = 120;
     DataToSend[3] = 120;

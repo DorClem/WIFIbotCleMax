@@ -9,6 +9,7 @@
 #include <QMutex>
 
 
+
 typedef struct dataInType { // création du type dataintype
     int SpeedFront;
     qint8 BatLevel;
@@ -38,6 +39,7 @@ public:
     void MoveLeft();
     // données du robot
     dataInType *dataL, *dataR;
+    // vitesse
     void setSpeed(int speed);
     int _speed;
 
@@ -45,14 +47,14 @@ public:
 signals:
     void updateUI(const QByteArray Data);
     void readCompleted(dataInType* dataL, dataInType* dataR);
-    //void speedChange(int speed);    // envoi de la vitesse au robot
+
 public slots:
     void connected();
     void disconnected();
     void bytesWritten(qint64 bytes);
     void readyRead();
     void MyTimerSlot();
-    //void setSpeed(int speed);   // sélection de la vitesse
+
 
 
 private:
